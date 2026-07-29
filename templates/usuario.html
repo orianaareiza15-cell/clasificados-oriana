@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Usuario</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="card-login">
+
+    <h1 class="titulo">
+        Bienvenido 👋
+    </h1>
+
+    <p class="subtitulo">
+        ¿Qué deseas hacer?
+    </p>
+
+    <a href="/crear_articulo" class="btn btn-personal mb-3">
+        Publicar artículo
+    </a>
+
+    <a href="/articulos" class="btn btn-personal mb-3">
+        Ver artículos
+    </a>
+
+    <a href="/logout" class="btn btn-cerrar">
+        Cerrar sesión
+    </a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Artículo</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="card-login">
+
+    <h1 class="titulo">{{ articulo[1] }}</h1>
+
+    {% if articulo[6] %}
+        <img src="{{ url_for('static', filename='uploads/' + articulo[6]) }}"
+        class="img-fluid rounded mb-3">
+    {% endif %}
+
+    <p><strong>Descripción:</strong> {{ articulo[2] }}</p>
+
+    <p><strong>Precio:</strong> ${{ articulo[3] }}</p>
+
+    <p><strong>Categoría:</strong> {{ articulo[4] }}</p>
+
+    <a href="/articulos" class="btn-personal text-center text-decoration-none d-block">
+        Volver
+    </a>
+
+</div>
+
+</body>
+
+</html>

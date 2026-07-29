@@ -1,0 +1,198 @@
+body{
+    margin:0;
+    min-height:100vh;
+    background:#351f61;
+    font-family:'Poppins', sans-serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card-login{
+
+    width:100%;
+    max-width:900px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 35px rgba(186, 113, 228, 0.356);
+
+}
+
+.titulo{
+
+    text-align:center;
+
+    color:#8D72D8;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    margin-bottom:5px;
+
+}
+
+.dorado{
+
+    color:#D7B458;
+
+}
+
+.subtitulo{
+
+    text-align:center;
+
+    color:#807e7e;
+
+    margin-bottom:35px;
+
+}
+
+label{
+
+    color:#8D72D8;
+
+    font-weight:600;
+
+    margin-bottom:5px;
+
+}
+
+.form-control{
+
+    border-radius:12px;
+
+    border:1px solid #DDD2F7;
+
+    padding:12px;
+
+    margin-bottom:18px;
+
+}
+
+.form-control:focus{
+
+    border-color:#B79CED;
+
+    box-shadow:0 0 8px rgb(255, 255, 255);
+
+}
+
+.btn-personal{
+
+    width:100%;
+
+    background:#C6AEF7;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:12px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn-personal:hover{
+
+    background:#B89CF0;
+
+    color:white;
+
+}
+
+.registro{
+
+    text-align:center;
+
+    margin-top:25px;
+
+}
+
+.registro a{
+
+    color:#A17CE8;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+.registro a:hover{
+
+    color:#8D72D8;
+
+}
+
+.logo{
+
+    font-size:55px;
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+}
+.btn-cerrar{
+
+    background:#E6D9FF;
+
+    color:#7B61C9;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    padding:10px 18px;
+
+}
+
+.btn-cerrar:hover{
+
+    background:#D7C5FF;
+
+    color:#5F43B2;
+
+}
+.card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+.card-img-top{
+    height:250px;
+    object-fit:cover;
+}
+
+.navbar{
+    margin-bottom:40px;
+}
+
+.pagina-articulos{
+    display:block !important;
+    justify-content:unset !important;
+    align-items:unset !important;
+}
