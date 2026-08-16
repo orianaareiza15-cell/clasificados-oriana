@@ -7,11 +7,15 @@ app = Flask(__name__)
 app.secret_key = "oriana123"
 
 
+import os
+import pymysql
+
 conn = pymysql.connect(
-    host='localhost',
-    user='root',
-    password='',
-    database='clasificados_db'
+    host=os.environ.get("DB_HOST"),
+    port=int(os.environ.get("DB_PORT")),
+    user=os.environ.get("DB_USER"),
+    password=os.environ.get("DB_PASSWORD"),
+    database=os.environ.get("DB_NAME")
 )
 
 
